@@ -1,0 +1,277 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.subtitulo {
+    background-color: rgb(236, 128, 128);
+    font-style: italic;
+    border: dotted 1vh black;
+    border-radius: 7vh;
+    font-weight: bold;
+    text-align: left;
+    margin: 2vh 3vh 3vh 2vh;
+    padding:2vh;
+    text-align: center;
+    text-decoration: underline;
+}
+
+header {
+    background-image: linear-gradient(180deg, rgba(102,2,22,1) 15%, rgba(220,20,60,1) 100%);;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    
+}
+.footer {
+    background-color: #000000;
+    color: white;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around;
+}
+
+nav ul li {
+    color: rgb(0, 0, 0);
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3vw;
+}
+
+.logo {
+    height: 8vh;
+    width: 25vw;
+    border: dotted rgb(187, 0, 0);
+    border-radius: 10rem;
+    margin-left: 35%;
+}
+
+.lista {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    background-color: #dc143c;
+    color: white;
+}
+.lista a{
+    border: double black;
+    height: 6vh;
+    width: 15vw;
+    text-align: center;
+    padding-top: 2.5vh;
+}
+.lista a:hover{
+    border: solid rgb(255, 255, 255);
+}
+
+.listaFooter {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    background-color: #660216;
+    color: white;
+}
+
+li {
+    display: flex;
+    margin: 2vw;
+    list-style: none;
+}
+
+.form {
+    padding: 4vh;
+}
+
+.autosImagenes {
+    width: 35vw;
+}
+
+.grillaIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 1.3fr 1.3fr 0.7fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header"
+        "seccionUno seccionUno seccionDos seccionDos"
+        "seccionUno seccionUno seccionDos seccionDos"
+        "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.seccionUno {
+    grid-area: seccionUno;
+}
+
+.seccionDos {
+    grid-area: seccionDos;
+}
+
+.footer {
+    grid-area: footer;
+}
+.block {
+    background-color: #ebeb5900;
+    border: double 1vh #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    color: #ffffff;
+    padding: 4vh;
+    margin: 5vh;
+    font-size: 2vw;
+}
+.seccionUno{
+    background-image: linear-gradient(0deg, rgba(102,2,22,1) 15%, #dc143c 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.seccionDos{
+    background-image: linear-gradient(0deg, rgba(102,2,22,1) 15%, rgba(220,20,60,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.grilla {
+    display: grid; 
+    grid-template-columns: 1fr 0.9fr 1.1fr 1fr; 
+    grid-template-rows: 0.4fr 2.2fr 0.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header header header header"
+      "Main Main Main Main"
+      "footer footer footer footer"; 
+  }
+  .header { grid-area: header; }
+  .footer { grid-area: footer; }
+  .Main { grid-area: Main; }
+
+.main{
+    background-image: linear-gradient(0deg, rgba(102,2,22,1) 15%, #dc143c 100%) ;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.contactanos{
+    padding: 2vh 2vh 2vh 0vh;
+    font-size: 5vh;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nombre{
+    width: 20vw;
+    height: 5vh;
+    text-align: center;
+    font-size: 3vh;
+}
+.email{
+    width: 20vw;
+    height: 5vh;
+    text-align: center;
+    font-size: 3vh;
+}
+.boton{
+    height: 3vh;
+    width: 8vw;
+}
+.comentario{
+    padding: 2vh 2vh 2vh 0vh;
+    font-size: 3vh;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.imagenAutosStock{
+    width: 30vw;
+}
+.organizador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 1vh black;
+}
+.titulo{
+    text-align: center;
+    padding: 1vh;
+}
+.textArea{
+width: 70vw;
+height: 70vh;
+}
+@media (max-width: 768px){
+.imagenAutosStock{
+        width: 33.3vw;
+}
+.organizador{
+        border: none;
+}
+li a {
+    font-size: 2vh;
+} 
+.lista a {
+    height: 4vh;
+    width: 13vw;
+    padding: 1vh;
+    justify-content: space-between;
+}
+.nombre{
+    width: 35vw;
+}
+.email{
+    width: 35vw;
+}
+}
+
+@media (max-width: 320px){
+.lista a {
+    height: 1vh;
+    width: 15vw;
+    padding: 1vh 0vh 1vh 0vh;
+}
+li a{
+    font-size: 0.8vh;
+}
+.listaFooter{
+    flex-direction: column;
+    align-items: center;
+}
+.listaFooter a{
+    font-size: 1.5vh;
+}
+.organizador{
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+.imagenAutosStock{
+    width: 100vw;
+}
+.contactanos{
+    font-size: 3vh;
+    padding: 0vh;
+}
+.nombre{
+    width: 40vw;
+}
+.email{
+    width: 40vw;
+}
+.boton{
+    width: 40vw;
+}
+.block{
+    height: 15vh;
+    width: 60vw;
+}
+}
