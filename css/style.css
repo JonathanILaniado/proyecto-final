@@ -209,6 +209,13 @@ li {
 width: 70vw;
 height: 70vh;
 }
+.listaFooter li a{
+    border: dotted rgb(255, 255, 255) 0.5vh;
+    padding: 1vw;
+}
+.listaFooter li a:hover{
+border: dotted black 0.5vh;
+}
 @media (max-width: 768px){
 .imagenAutosStock{
         width: 33.3vw;
