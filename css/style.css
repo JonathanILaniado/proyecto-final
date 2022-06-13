@@ -195,6 +195,7 @@ li {
 .imagenAutosStock{
     width: 30vw;
 }
+
 .organizador{
     display: flex;
     flex-direction: row;
@@ -215,6 +216,8 @@ height: 70vh;
 }
 .listaFooter li a:hover{
 border: dotted black 0.5vh;
+transform: scale(1.5);
+transition: 2s;
 }
 @media (max-width: 768px){
 .imagenAutosStock{
